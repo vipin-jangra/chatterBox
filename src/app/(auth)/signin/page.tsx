@@ -1,6 +1,6 @@
 'use client';
 
-import Loader from "/lib/loader";
+
 import { message } from "antd";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -10,6 +10,7 @@ import { MdLockOutline } from "react-icons/md";
 import { signIn } from "next-auth/react";
 import Image from "next/image";
 import { BsSend } from "react-icons/bs";
+import Loader from "../../../lib/loader";
 
 export default function Signin() {
     const router = useRouter()
