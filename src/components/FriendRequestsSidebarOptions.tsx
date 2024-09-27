@@ -1,6 +1,6 @@
 'use client'
 
-import { getSocket } from "@/redux/socket";
+import { getSocket } from "../redux/socket";
 import { message } from "antd";
 import Link from "next/link";
 import { FC, useEffect, useState } from "react";

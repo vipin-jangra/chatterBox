@@ -1,10 +1,10 @@
 "use client";
 
-import { addFriendValidator } from "@/lib/validations/add-friend";
+import { addFriendValidator } from "../lib/validations/add-friend";
 import { message } from "antd";
 import axios from "axios";
 import { FC, useEffect, useState } from "react";
-import { getSocket } from "@/redux/socket";
+import { getSocket } from "../redux/socket";
 import { IoChevronBack } from "react-icons/io5";
 import { useRouter } from "next/navigation";
 import Image from "next/image";

@@ -7,7 +7,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { message } from 'antd';
 import { useRouter } from "next/navigation";
-import Loader from "@/lib/loader";
+import Loader from "../../../lib/loader";
 import { BsSend } from "react-icons/bs";
 
 export default function Signup() {

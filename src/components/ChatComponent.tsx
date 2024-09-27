@@ -1,12 +1,12 @@
 "use client"; // Mark this component as client-side
 import { useState, useEffect } from "react";
-import Messages from "@/components/Messages";
+import Messages from "../components/Messages";
 import Image from "next/image";
 import { useSelector } from "react-redux";
 import { IoChevronBack } from "react-icons/io5";
 import { useRouter } from "next/navigation";
-import { RootState } from "@/redux/store";
-import { Message } from '@/types/db';
+import { RootState } from "../redux/store";
+import { Message } from '../types/db';
 
 interface ChatComponentProps {
     chatPartner: {

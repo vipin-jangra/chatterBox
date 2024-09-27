@@ -1,7 +1,7 @@
-import { authOptions } from "@/app/api/auth/[...nextauth]/options";
-import PendingFriendRequests from "@/components/PendingFriendRequests";
-import dbConnect from "@/lib/dbConfig";
-import User from "@/models/userModel";
+import { authOptions } from "../../../api/auth/[...nextauth]/options";
+import PendingFriendRequests from "../../../../components/PendingFriendRequests";
+import dbConnect from "../../../../lib/dbConfig";
+import User from "../../../../models/userModel";
 import { getServerSession } from "next-auth/next";
 import { notFound } from "next/navigation";
 

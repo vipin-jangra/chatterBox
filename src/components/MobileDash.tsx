@@ -4,7 +4,7 @@ import { IoSearch } from "react-icons/io5";
 import SideBarChatList from "./SideBarChatsList";
 import { FC, useState } from "react";
 
-import { Friends } from "@/types/IncomingFriendRequests";
+import { Friends } from "../types/IncomingFriendRequests";
 
 
 interface MobileDashProps {

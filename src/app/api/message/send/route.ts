@@ -1,9 +1,9 @@
 import { getServerSession } from "next-auth";
 import { NextRequest, NextResponse } from "next/server";
 import { authOptions } from "../../auth/[...nextauth]/options";
-import User from "@/models/userModel";
-import dbConnect from "@/lib/dbConfig";
-import Chats from "@/models/chat";
+import User from "../../../../models/userModel";
+import dbConnect from "../../../../lib/dbConfig";
+import Chats from "../../../../models/chat";
 
 
 

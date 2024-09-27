@@ -1,10 +1,10 @@
 'use client'
-import { cn } from "@/lib/utils";
-import { getSocket } from "@/redux/socket";
+import { cn } from "../lib/utils";
+import { getSocket } from "../redux/socket";
 import Image from "next/image";
 import { FC, useEffect, useRef, useState } from "react";
 import ChatInput from "./ChatInput";
-import { Message } from "@/types/db";
+import { Message } from "../types/db";
 
 
 

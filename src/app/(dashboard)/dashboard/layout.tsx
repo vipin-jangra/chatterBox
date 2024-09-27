@@ -1,19 +1,19 @@
 import Link from "next/link";
 import { ReactNode } from "react";
 import { getServerSession, Session } from "next-auth";
-import { authOptions } from "@/app/api/auth/[...nextauth]/options";
+import { authOptions } from "../../api/auth/[...nextauth]/options";
 import { notFound } from "next/navigation";
 
-import User from "@/models/userModel";
-import dbConnect from "@/lib/dbConfig";
+import User from "../../../models/userModel";
+import dbConnect from "../../../lib/dbConfig";
 
 import { IoAddCircleOutline, IoChatbubbleEllipses } from "react-icons/io5";
 
 import { BsSend } from "react-icons/bs";
-import SideBarChatList from "@/components/SideBarChatsList";
-import FriendRequestsSidebarOptions from "@/components/FriendRequestsSidebarOptions";
+import SideBarChatList from "../../../components/SideBarChatsList";
+import FriendRequestsSidebarOptions from "../../../components/FriendRequestsSidebarOptions";
 import Image from "next/image";
-import SignOutButton from "@/components/SignOutButton";
+import SignOutButton from "../../../components/SignOutButton";
 import { IconBaseProps } from "react-icons/lib";
 
 interface LayoutProps {

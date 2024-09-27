@@ -1,8 +1,8 @@
-import User from '@/models/userModel';
+import User from '../../../../models/userModel';
 import { getServerSession } from 'next-auth';
 import { NextRequest, NextResponse } from 'next/server';
 import { authOptions } from '../../auth/[...nextauth]/options';
-import dbConnect from '@/lib/dbConfig';
+import dbConnect from '../../../../lib/dbConfig';
 
 // API route for searching friends by username or email
 export async function POST(req: NextRequest) {

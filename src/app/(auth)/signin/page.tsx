@@ -1,6 +1,6 @@
 'use client';
 
-import Loader from "@/lib/loader";
+import Loader from "../../../lib/loader";
 import { message } from "antd";
 import Link from "next/link";
 import { useRouter } from "next/navigation";

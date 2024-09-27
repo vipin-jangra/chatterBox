@@ -6,7 +6,7 @@ import { IoCheckmarkOutline, IoChevronBack } from "react-icons/io5";
 import { IoIosClose } from "react-icons/io";
 import { useRouter } from "next/navigation";
 import { message } from "antd";
-import { getSocket } from "@/redux/socket";
+import { getSocket } from "../redux/socket";
 import Image from "next/image";
 
 interface IncomingFriendRequests {

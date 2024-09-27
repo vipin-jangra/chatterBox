@@ -1,12 +1,12 @@
-import { authOptions } from '@/app/api/auth/[...nextauth]/options';
-import dbConnect from '@/lib/dbConfig';
-import Chats from '@/models/chat';
-import User from '@/models/userModel';
+import { authOptions } from '../../../../api/auth/[...nextauth]/options';
+import dbConnect from '../../../../../lib/dbConfig';
+import Chats from '../../../../../models/chat';
+import User from '../../../../../models/userModel';
 import { notFound } from 'next/navigation';
 import mongoose from 'mongoose';
-import ChatComponent from '@/components/ChatComponent';
+import ChatComponent from '../../../../../components/ChatComponent';
 import { getServerSession } from 'next-auth/next';
-import { Chat } from '@/types/db';
+import { Chat } from '../../../../../types/db';
 import { Session } from 'next-auth';
 
 interface PageProps {

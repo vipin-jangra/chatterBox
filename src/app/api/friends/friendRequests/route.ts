@@ -2,8 +2,8 @@ import { getServerSession } from "next-auth";
 import { NextRequest, NextResponse } from "next/server";
 import { authOptions } from "../../auth/[...nextauth]/options";
 import { notFound } from "next/navigation";
-import dbConnect from "@/lib/dbConfig";
-import User from "@/models/userModel";
+import dbConnect from "../../../../lib/dbConfig"
+import User from "../../../../models/userModel"
 
 
 export async function POST(req:NextRequest){

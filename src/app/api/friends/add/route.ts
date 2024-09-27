@@ -1,10 +1,10 @@
-import dbConnect from "@/lib/dbConfig"
-import { addFriendValidator } from "@/lib/validations/add-friend"
-import User from "@/models/userModel"
+import dbConnect from "../../../../lib/dbConfig"
+import { addFriendValidator } from "../../../../lib/validations/add-friend"
+import User from "../../../../models/userModel"
 import { getServerSession } from "next-auth"
 import { NextRequest, NextResponse } from "next/server"
 import { authOptions } from "../../auth/[...nextauth]/options"
-import FriendRequest from "@/models/friendRequest"
+import FriendRequest from "../../../../models/friendRequest"
 
 
 export async function POST(req: NextRequest){

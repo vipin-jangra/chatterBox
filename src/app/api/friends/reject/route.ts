@@ -2,8 +2,8 @@ import { getServerSession } from "next-auth";
 import { NextRequest, NextResponse } from "next/server";
 import { authOptions } from "../../auth/[...nextauth]/options";
 import { z } from "zod";
-import User from "@/models/userModel";
-import FriendRequest from "@/models/friendRequest";
+import User from "../../../../models/userModel"
+import FriendRequest from "../../../../models/friendRequest";
 
 
 export async function POST(req:NextRequest){

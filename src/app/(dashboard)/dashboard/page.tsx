@@ -1,8 +1,8 @@
 
-import { authOptions } from "@/app/api/auth/[...nextauth]/options";
-import MobileDash from "@/components/MobileDash";
-import dbConnect from "@/lib/dbConfig";
-import User from "@/models/userModel";
+import { authOptions } from "../../api/auth/[...nextauth]/options";
+import MobileDash from "../../../components/MobileDash";
+import dbConnect from "../../../lib/dbConfig";
+import User from "../../../models/userModel";
 import { Session } from "next-auth";
 import { notFound } from "next/navigation";
 import { BsSend } from "react-icons/bs";

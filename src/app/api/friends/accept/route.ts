@@ -4,8 +4,8 @@ import { getServerSession } from "next-auth";
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import { authOptions } from "../../auth/[...nextauth]/options";
-import User, { UserDocument } from "@/models/userModel"; // Import UserDocument type
-import FriendRequest from "@/models/friendRequest";
+import User, { UserDocument } from "../../../../models/userModel"; // Import UserDocument type
+import FriendRequest from "../../../../models/friendRequest";
 import mongoose from "mongoose";
 
 // Function to check if a friend request exists

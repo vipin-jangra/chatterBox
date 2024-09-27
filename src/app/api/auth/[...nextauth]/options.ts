@@ -1,9 +1,9 @@
 import { NextAuthOptions } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import CredentialsProvider from "next-auth/providers/credentials";
-import User from "@/models/userModel";
+import User from "../../../../models/userModel";
 import bcrypt from 'bcryptjs';
-import dbConnect from "@/lib/dbConfig";
+import dbConnect from "../../../../lib/dbConfig";
 import { User as NextAuthUser, Account, Profile } from 'next-auth';
 
 // Define the argument types for the signIn function

@@ -1,11 +1,11 @@
 'use client';
-import { getSocket } from "@/redux/socket";
+import { getSocket } from "../redux/socket";
 import { message as antdMessage } from "antd";
 import axios from "axios";
 import { FC, useRef, useState } from "react";
 import TextareaAutosize from 'react-textarea-autosize';
 import { IoSend } from "react-icons/io5";
-import { Message } from "@/types/db";
+import { Message } from "../types/db";
 
 
 interface ChatInputProps {

@@ -1,10 +1,10 @@
 'use client';
 
-import { ChatHrefConstructor } from '@/lib/utils';
-import { setOnlineUsers } from '@/redux/notificationsSlice';
-import { getSocket, initializeeSocket } from '@/redux/socket';
-import store, { RootState } from '@/redux/store';
-import { Friends } from '@/types/IncomingFriendRequests';
+import { ChatHrefConstructor } from '../lib/utils';
+import { setOnlineUsers } from '../redux/notificationsSlice';
+import { getSocket, initializeeSocket } from '../redux/socket';
+import store, { RootState } from '../redux/store';
+import { Friends } from '../types/IncomingFriendRequests';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FC, useEffect } from 'react';
