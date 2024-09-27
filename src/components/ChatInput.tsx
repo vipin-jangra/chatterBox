@@ -31,7 +31,7 @@ const ChatInput: FC<ChatInputProps> = ({ chatPartner, chatid, sessionId }) => {
                 sender : sessionId,
                 receiver: chatPartner.id,
                 content: input,
-                timestamp : new Date().toLocaleString('en-US', { hour: '2-digit', minute: '2-digit' }),
+                timestamp : new Date().toString(),
             }
             
            

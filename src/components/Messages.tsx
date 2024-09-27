@@ -40,11 +40,9 @@ const Messages: FC<MessageProps> = ({
         });
       };
 
-    useEffect(() => {
-        if (JSON.stringify(messages) !== JSON.stringify(initialMessages)) {
-            setMessages(initialMessages);
-        }
-    }, [initialMessages, messages]);
+      useEffect(() => {
+        setMessages(initialMessages);
+    }, [initialMessages]);
     
     useEffect(()=>{
         try {
