@@ -153,14 +153,14 @@ const Layout = async ({ children }: LayoutProps) => {
             <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 md:hidden">
                 <nav className="flex">
                     <ul className="flex w-full justify-between  gap-2 px-3">
-                        <li className="flex items-center justify-center hover:bg-gray-50 min-w-20 ">
+                        <li className="flex items-center justify-center hover:bg-gray-50  ">
                             <Link href="/dashboard" className="flex flex-col items-center text-gray-600 hover:text-indigo-500 ">
                                 <IoChatbubbleEllipses className="h-6 w-6" />
                                 <span className="text-xs">Chats</span>
                             </Link>
                             
                         </li>
-                        <li className="flex items-center justify-center hover:bg-gray-50 min-w-20 ">
+                        <li className="flex items-center justify-center hover:bg-gray-50 ">
                             <Link href="/dashboard/add" className="flex flex-col items-center text-gray-600 hover:text-indigo-500">
                                 <IoAddCircleOutline className="h-6 w-6" />
                                 <span className="text-xs">Add Friend</span>
@@ -169,7 +169,7 @@ const Layout = async ({ children }: LayoutProps) => {
                         <li className="flex">
                             <FriendRequestsSidebarOptions initialUnseenRequestCount={unseenRequestCount} />
                         </li>
-                        <li className="flex items-center hover:bg-gray-50 justify-around min-w-28 ">
+                        <li className="flex items-center hover:bg-gray-50 justify-around  ">
                             <div className="relative h-8 w-8 bg-gray-50 ">
                                 <Image
                                     fill

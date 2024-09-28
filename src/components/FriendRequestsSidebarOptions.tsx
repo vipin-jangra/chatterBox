@@ -45,7 +45,7 @@ const FriendRequestsSidebarOptions: FC<FriendRequestsSidebarOptionsProps> = ({in
             
             <div className="flex relative flex-col md:flex-row md:gap-2   items-center text-center w-max">
                 <IoPersonAdd className="h-6 w-6" />
-                <span className="text-xs md:font-semibold">Pending Requests</span>
+                <span className="text-xs md:font-semibold">Requests</span>
                 {unseenRequestCount >0 ? 
                 (<div className="md:hidden absolute right-0  rounded-full w-5 h-5 text-xs flex justify-center items-center text-white bg-indigo-600">
                     {unseenRequestCount}
