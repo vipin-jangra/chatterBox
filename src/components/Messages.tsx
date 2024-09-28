@@ -3,7 +3,6 @@ import { cn } from "../lib/utils";
 import { getSocket } from "../redux/socket";
 import Image from "next/image";
 import { FC, useEffect, useRef, useState } from "react";
-import ChatInput from "./ChatInput";
 import { Message } from "../types/db";
 
 
@@ -25,8 +24,7 @@ const Messages: FC<MessageProps> = ({
     initialMessages,
     sessionId,
     sessionImg,
-    chatPartner,
-    chatId
+    chatPartner
 }) => {
 
     const [messages, setMessages] = useState<Message[]>(initialMessages);
@@ -68,7 +66,7 @@ const Messages: FC<MessageProps> = ({
 
     return (
 
-        <div className="relative flex h-full">
+        <div className="relative overflow-hidden">
             
             {/* Background image with overlay */}
             <div
@@ -79,13 +77,8 @@ const Messages: FC<MessageProps> = ({
                 }}
                 className="absolute inset-0 z-0 before:absolute before:inset-0 before:bg-slate-100 before:opacity-80"
             />
-            
-            <div  id="messages" className="relative min-h-[calc(100vh-12rem)] flex flex-1 flex-col-reverse gap-4 p-3 overflow-y-auto scrollbar-thumb-blue scrollbar-thumb-rounded scrollbar-track-blue-lighter scrollbar-w-2 scrolling-touch">
-                <ChatInput
-                    chatPartner={chatPartner}
-                    sessionId={sessionId}
-                    chatid={chatId}
-                />
+                
+            <div  id="messages" className="relative h-full flex flex-col-reverse gap-4 p-3 overflow-y-auto scrollbar-thumb-blue scrollbar-thumb-rounded scrollbar-track-blue-lighter scrollbar-w-2 scrolling-touch">
                 <div ref={scrollDownRef} />
                 
                 {messages.map((message, index) => {
@@ -142,8 +135,7 @@ const Messages: FC<MessageProps> = ({
 
                 
             </div>
-            
-
+        
         </div>
     );
 }

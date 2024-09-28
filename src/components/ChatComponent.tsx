@@ -7,6 +7,7 @@ import { IoChevronBack } from "react-icons/io5";
 import { useRouter } from "next/navigation";
 import { RootState } from "../redux/store";
 import { Message } from '../types/db';
+import ChatInput from "./ChatInput";
 
 interface ChatComponentProps {
     chatPartner: {
@@ -47,12 +48,12 @@ const ChatComponent: React.FC<ChatComponentProps> = ({ chatPartner, tempMessages
     }
 
     return (
-        <div className="relative flex-1 justify-between flex flex-col h-full max-h-[calc(100vh-3rem)] md:max-h-full">
-            <div className="flex sm:items-center py-3 border-b-2 border-gray-200">
+        <div className="relative justify-between flex flex-col h-full pb-16 md:pb-0 ">
+            <div className=" flex sm:items-center py-3 border-b-2 border-gray-200">
                 <button onClick={handleBack} className="flex items-center ml-2 mr-4 focus:outline-none">
                     <IoChevronBack className="text-2xl text-gray-700" />
                 </button>
-                <div className="relative flex items-center">
+                <div className="relative flex items-center ">
                     <div className="relative">
                         <div className="relative w-8 sm:w-12 h-8 sm:h-12">
                             <Image
@@ -92,6 +93,12 @@ const ChatComponent: React.FC<ChatComponentProps> = ({ chatPartner, tempMessages
                 sessionImg={sessionUser.image}
                 chatId={chatId}
             />
+
+            <ChatInput
+                    chatPartner={chatPartner}
+                    sessionId={sessionUser.id}
+                    chatid={chatId}
+                />
         </div>
     );
 };

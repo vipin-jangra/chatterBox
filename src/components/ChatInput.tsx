@@ -51,8 +51,8 @@ const ChatInput: FC<ChatInputProps> = ({ chatPartner, chatid, sessionId }) => {
     };
 
     return (
-        <div className="border-t border-gray-200 bg-white sm:mb-0">
-            <div className="relative flex-1 overflow-hidden rounded-lg shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-indigo-600">
+        <div className="relative border-t border-gray-200 bg-white sm:mb-0">
+            <div className=" overflow-hidden rounded-lg shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-indigo-600">
                 <TextareaAutosize
                     ref={textareaRef}
                     onKeyDown={(e) => {
@@ -71,7 +71,7 @@ const ChatInput: FC<ChatInputProps> = ({ chatPartner, chatid, sessionId }) => {
                 
                 <div onClick={() => textareaRef.current?.focus()} className="py-2" aria-hidden="true">
                     <div className="py-px">
-                        <div className="h-9"></div>
+                        <div className="h-3"></div>
                     </div>
                 </div>
 
@@ -80,9 +80,9 @@ const ChatInput: FC<ChatInputProps> = ({ chatPartner, chatid, sessionId }) => {
                     <button
                         type="button"
                         onClick={sendMessage}
-                        className="inline-flex items-center px-3 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        className="inline-flex items-center justify-center p-2 text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-full transition duration-200 ease-in-out"
                     >
-                        <IoSend className="text-xl" />
+                        <IoSend className="text-lg" />
                     </button>
                 </div>
             </div>
