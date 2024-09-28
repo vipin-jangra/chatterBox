@@ -4,7 +4,7 @@ import { Server } from "socket.io";
 
 const dev = process.env.NODE_ENV !== "production";
 const hostname = process.env.DOMAIN;
-const port = 3000;
+const port = process.env.PORT;
 
 const app = next({ dev, hostname, port });
 const handler = app.getRequestHandler();
@@ -69,6 +69,6 @@ app.prepare().then(() => {
   });
 
   httpServer.listen(port, () => {
-    console.log(`> Ready on ${hostname}:${port}`);
+    console.log(`> Ready on PORT :${port}`);
   });
 });
